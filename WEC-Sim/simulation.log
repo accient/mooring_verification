@@ -1,0 +1,92 @@
+
+WEC-Sim Input From Standard wecSimInputFile.m Of Case Directory... 
+WEC-Sim: An open-source code for simulating wave energy converters
+Version: 4.4
+
+Initializing the Simulation Class...
+	Case Dir: E:\zhanghu\M4\verification\OMAE2016-54789\WEC-Sim 
+
+body = 
+
+  <a href="matlab:helpPopup bodyClass" style="font-weight:bold">bodyClass</a> - 属性:
+
+            dof_start: []
+              dof_end: []
+            hydroData: [1×1 struct]
+                 name: []
+                 mass: 'equilibrium'
+         momOfInertia: []
+                   cg: []
+                   cb: []
+              dispVol: []
+                  dof: 6
+              dof_gbm: []
+         geometryFile: 'geometry/body1.stl'
+             viscDrag: [1×1 struct]
+             initDisp: [1×1 struct]
+       hydroStiffness: [6×6 double]
+        linearDamping: [6×6 double]
+    userDefinedExcIRF: []
+                  viz: [1×1 struct]
+         bodyparaview: 1
+       morisonElement: [1×1 struct]
+               nhBody: 0
+        flexHydroBody: 0
+       meanDriftForce: 0
+              nlHydro: 0
+         bodyGeometry: [1×1 struct]
+           hydroForce: [1×1 struct]
+               h5File: 'hydroData/DIFFRACT(0.00).h5'
+     hydroDataBodyNum: []
+       massCalcMethod: []
+           bodyNumber: []
+            bodyTotal: []
+                 lenJ: []
+
+历时 0.394354 秒。
+
+WEC-Sim Pre-processing ...   
+历时 0.030453 秒。
+
+WEC-Sim Simulation Settings:
+	Start Time                     (sec) = 0
+	End Time                       (sec) = 100
+	Time Step Size                 (sec) = 0.01
+	Ramp Function Time             (sec) = 10
+	 Number of Time Steps     = 10000 
+
+Wave Environment: 
+	Wave Type                            = Regular Waves (Constant Hydrodynamic Coefficients)
+	Wave Height, H (m)                   = 0.04
+	Wave Period, T (sec)                 = 0.8
+
+List of Body: Number of Bodies = 1 
+
+	***** Body Number 1, Name: 1 *****
+	Body CG                          (m) = [0,0,0.029]
+	Body Mass                       (kg) = 0.69579 
+	Body Diagonal MOI              (kgm2)= [0.015,0.015,0.021]
+
+List of PTO(s): No PTO in the system
+
+List of Constraint(s): Number of Constraints = 1 
+
+	***** Constraint Name: Constraint1 *****
+
+
+Simulating the WEC device defined in the SimMechanics model E:\zhanghu\M4\verification\OMAE2016-54789\WEC-Sim\FPA.slx...   
+历时 0.137270 秒。
+历时 4.159694 秒。
+
+Post-processing and saving...   
+{错误使用 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\win10\Documents\GitHub\WEC-Sim-4.4\source\wecSim.m', 46)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\win10\Documents\GitHub\WEC-Sim-4.4\source\wecSim.m',46,0)">第 46 行</a>)
+Error due to multiple causes.
+Caused by:
+    错误使用 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\win10\Documents\GitHub\WEC-Sim-4.4\source\wecSim.m', 46)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\win10\Documents\GitHub\WEC-Sim-4.4\source\wecSim.m',46,0)">第 46 行</a>)
+    Derivative of state 'FPA.Floating_3DOF.CONSTRAINT_Planar_Joint.Px.v' in block '<a href="matlab:open_and_hilite_hyperlink ('FPA/Floating (3DOF)/CONSTRAINT (Planar Joint)','error')">FPA/Floating (3DOF)/CONSTRAINT (Planar Joint)</a>' at time 0.01 is not finite. The simulation will be stopped. There may be a singularity in the solution.  If not, try reducing the step size (either by reducing the fixed step size or by tightening the error tolerances)
+    错误使用 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\win10\Documents\GitHub\WEC-Sim-4.4\source\wecSim.m', 46)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\win10\Documents\GitHub\WEC-Sim-4.4\source\wecSim.m',46,0)">第 46 行</a>)
+    Error evaluating <a href="matlab:Simulink.internal.OpenCallbackParamsDialog(['FPA/Global Reference Frame'],'StopFcn');">'StopFcn'</a> callback of Frames block (mask) '<a href="matlab:open_and_hilite_hyperlink ('FPA/Global Reference Frame','error')">FPA/Global Reference Frame</a>'.
+    Callback string is 'run('stopWecSim')'
+        错误使用 <a href="matlab:matlab.internal.language.introspective.errorDocCallback('wecSim', 'C:\Users\win10\Documents\GitHub\WEC-Sim-4.4\source\wecSim.m', 46)" style="font-weight:bold">wecSim</a> (<a href="matlab: opentoline('C:\Users\win10\Documents\GitHub\WEC-Sim-4.4\source\wecSim.m',46,0)">第 46 行</a>)
+        第一个输入必须为字符向量或字符串标量。
+} 
